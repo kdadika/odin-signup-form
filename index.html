@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+	<main>
+		<div class="image">
+			<div class="logo">
+				<img class='odinLogo' src="./odin_logo.png" alt="">
+				<h2 class="norseFitness">Norse Fitness</h2>
+			</div>
+			<div class="photoCredit">
+				<p>Photo by <a href="https://unsplash.com/@echaparro">Edgar Chapparo</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="intro">
+				<h1>Want to achieve the body of a God or Goddess?  All it takes is following our Nordic style training program, designed specifically for you! <br> Sign up now to get started.</h1>
+				<p>You definitely don't want to miss this.</p>
+			</div>
+			<div class="form">
+				<h2>You got this!</h2>
+				<form action="#" method="get" class="signupForm">
+
+						<div class="gridRow">
+							<div class="formColumn firstName">
+							  <label for="firstNaame">First Name </label>
+							  <input type="text" name="name" id="firstName" required>
+							</div>
+							<div class="formColumn lastName">
+							  <label for="lastNaame">Last Name </label>
+							  <input type="text" name="name" id="lastName" required>
+							</div>
+	
+						</div>
+						<div class="gridRow">
+							<div class="formColumn email">
+							  <label for="email">Email </label>
+							  <input type="email" name="email" id="email" required>
+							</div>
+							<div class="formColumn phone">
+							  <label for="phone">Phone Number </label>
+							  <input type="tel" pattern="[^a-zA-Z]+" name="phone" id="phone" required>
+							</div>
+						</div>	
+						<div class="gridRow">
+							<div class="formColumn pass">
+								<label for="pass">Password</label>
+								<input type="password" id="password" name="password"
+									   minlength="8" required>
+									   <span id="matchMessage"></span>
+							</div>
+							<div class="formColumn passConfirm">
+								<label for="passConfirm">Confirm Password</label>
+								<input type="password" id="passwordConfirm" name="passwordConfirm"
+									   minlength="8" required>
+							</div>
+					</div>
+				</div>
+				<div class="submit">
+					<input id="createAccount" type="submit" value="Create Account">
+					<p>Already have an account? <a class="login" href="#">
+						<span>
+							Log in
+						</span></a></p>
+				</div>
+			</form>
+		</div>
+	</main>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
